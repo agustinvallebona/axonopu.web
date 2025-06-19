@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Axonopus</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>Axonopus</h1>
+    <h3>Mantenimiento de jardines y espacios verdes</h3>
+  </header>
+
+  <section class="contenido">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos un emprendimiento local dedicado a mantenimiento de jardines, corte de césped y mejoras en espacios verdes. Nuestro compromiso es brindar un servicio confiable, responsable y personalizado. ¡Gracias por confiar en nosotros!</p>
+  </section>
+
+  <section class="contenido">
+    <button class="btn" onclick="toggleServicios()">Ver Servicios</button>
+    <div id="servicios" class="servicios-lista">
+      <ul>
+        <li>Talud</li>
+        <li>Podas</li>
+        <li>Desmalezado</li>
+        <li>Corte de césped</li>
+        <li>Diseño y limpieza de canteros</li>
+        <li>Hidrolavados</li>
+        <li>Fumigación: insecticidas y herbicidas</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contacto">
+    <h3>¿Querés comunicarte? Hacelo directo y te asesoramos sin compromiso</h3>
+    <a class="btn" href="https://wa.me/59891686560" target="_blank">WhatsApp Agustín</a>
+    <a class="btn" href="https://wa.me/59897433911" target="_blank">WhatsApp Alexis</a>
+    <a class="btn" href="mailto:agus.servicioss@gmail.com">Gmail</a>
+    <a class="btn" href="trabajos.html">Ver nuestros trabajos</a>
+  </section>
+
+  <footer>
+    @2025 Axonopus - Maldonado, Uruguay
+  </footer>
+
+  <script>
+    function toggleServicios() {
+      const lista = document.getElementById("servicios");
+      lista.style.display = lista.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
+
